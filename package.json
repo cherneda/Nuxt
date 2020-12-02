@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Nuxt.js project",
   "author": "Alex Che",
-  "private": true,
+  "private": "false",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -13,9 +13,18 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
     "css-loader": "^3.6.0",
-    "sass-loader": "^9.0.2"
+    "gsap": "file:gsap-bonus.tgz",
+    "imports-loader": "^1.1.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^9.0.2",
+    "vue": "^2.6.12",
+    "vue-router": "^3.3.4",
+    "vue-template-compiler": "^2.6.12",
+    "vuex": "^3.5.1",
+    "vuex-persist": "^2.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

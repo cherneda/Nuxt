@@ -30,9 +30,10 @@
 <script>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
-gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin);
 
 gsap.defaults({ease: "none"});
 
@@ -98,8 +99,14 @@ export default {
     
 tl.fromTo("path", {drawSVG: "0%"}, {duration: 3, drawSVG: "100%", stagger: 0.1})
 
+
 }
-  }
+  },
+head() {
+  return {
+    script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+  };
+},
 }
 </script>
 

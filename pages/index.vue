@@ -30,10 +30,9 @@
 <script>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
-import { DrawSVGPlugin } from "gsap/DrawSVGPlugin.js";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin.js";
 
-gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
 gsap.defaults({ease: "none"});
 
